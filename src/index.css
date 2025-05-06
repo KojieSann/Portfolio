@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+::selection {
+  background-color: #f77f00;
+  color: #eae2b7;
+}
+
+body {
+  @apply overflow-x-hidden;
+  background-color: #fdfdfd;
+}
+
+@layer utilities {
+  .btn {
+    @apply bg-gray-800 text-white;
+  }
+  .font-josefin {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  .font-garamond {
+    font-family: "EB Garamond", serif;
+  }
+  .font-playfair {
+    font-family: "Playfair Display", serif;
+  }
+  .text-stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+  }
+  .colored-stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px #d62828;
+  }
+  .highlighted-text {
+    color: #f77f00;
+  }
+}
+.grid-overlay {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20vw 25vh;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.circle-shadow {
+  background: rgba(176, 172, 172, 7.8);
+  background: radial-gradient(
+    circle,
+    rgba(176, 172, 172, 0.78) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.top-project-gradient {
+  background: #f77f00;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 127, 0, 0.1) 0%,
+    rgba(252, 191, 73, 0.05) 25%,
+    rgba(234, 226, 183, 0.01) 50%
+  );
+}
+.bottom-project-gradient {
+  background: #f77f00;
+  background: linear-gradient(
+    0deg,
+    rgba(247, 127, 0, 0.1) 0%,
+    rgba(252, 191, 73, 0.05) 25%,
+    rgba(234, 226, 183, 0.01) 50%
+  );
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
