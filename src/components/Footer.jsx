@@ -53,11 +53,11 @@ const Contacts = () => {
       <span className="absolute lg:bottom-30 lg:left-20 bottom-15 left-5 text-white lg:text-7xl text-4xl font-semibold text-opacity-60 pointer-events-none font-josefin">
         Need me?
       </span>
-      <div className="w-full items-end flex flex-col lg:pt-38 pt-26 lg:pb-0 pb-20 lg:px-10 px-5 gap-5 z-10 ">
+      <div className="w-full items-end flex flex-col lg:pt-30 pt-26 lg:pb-0 pb-20 lg:px-10 px-5 gap-5 z-10 ">
         <p className="lg:w-1/3 w-2/3 text-xs lg:text-lg font-josefin text-white font-light lg:font-medium text-right">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          voluptatum quam nesciunt error mollitia neque consectetur doloremque
-          minus facere corrupti.
+          Got an idea buzzing in your head? Whether it's a website, a design, or
+          something wild and unexpected, I'm your person. Hit me up and let's
+          make it real!
         </p>
         <div className="lg:h-18 lg:w-18 h-12 w-12 lg:text-2xl text-sm rounded-full bg-[#FCBF49] flex items-center justify-center text-white cursor-pointer">
           <i class="fa-solid fa-arrow-up"></i>

@@ -97,7 +97,7 @@ const Burger = () => {
               <FlipLink href="#">The &nbsp; Projects?</FlipLink>
             </span>
             <span className="font-playfair">
-              <FlipLink href="#">About &nbsp; me?</FlipLink>
+              <FlipLink href="#">Résumé</FlipLink>
             </span>
           </div>
           <div className="absolute right-5 bottom-25 font-medium text-[#242424] flex flex-col text-left text-9xl pointer-events-none">

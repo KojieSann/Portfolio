@@ -24,8 +24,8 @@ const ProjectPage = ({
   skills = ["Skill 1", "Skill 2", "Skill 3", "Skill 4"],
 }) => {
   return (
-    <div className="w-screen h-screen bg-transparent flex items-center justify-center z-10 py-25 px-15">
-      <div className="h-full w-3/9 relative">
+    <div className="project-shadow w-screen h-screen bg-transparent flex flex-col lg:flex-row items-center justify-center gap-10 z-10 p-10 lg:py-25 lg:px-15">
+      <div className="h-full lg:w-3/9 w-full relative">
         <div className="h-[1px] w-full bg-black"></div>
         <div className="w-full text-sm font-poppins py-5 flex">
           <p className="ml-auto">{year}</p>
@@ -65,13 +65,13 @@ const ProjectImage = () => {
     <>
       {isHovered && <Cursor x={mousePos.x} y={mousePos.y} />}
       <a
-        className="h-full w-6/9 relative cursor-none overflow-hidden"
+        className="h-full lg:w-6/9 w-full relative cursor-none overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         href="https://www.olivarezcollegetagaytay.edu.ph/"
         target="_blank"
       >
-        <div className="h-full w-full z-20 absolute top-0 -right-10">
+        <div className="h-full w-full z-20 absolute top-0 lg:-right-10">
           <img
             className="h-full w-full object-cover"
             src="./img/projects/octProject.png"

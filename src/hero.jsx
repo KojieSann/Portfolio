@@ -36,8 +36,8 @@ const HeaderMenu = () => {
       </div>
       <div className="circle-shadow"></div>
       <img
-        className="absolute sm:w-2/7 md:w-2/4 lg:w-2/7 w-3/5 object-cover rounded-2xl"
-        src="./img/madalina-georgiana-patru-gBGNRSp8Up4-unsplash.jpg"
+        className="absolute w-2/9 md:w-2/6 lg:w-2/8 w-3/5 object-cover rounded-2xl grayscale-[50]"
+        src="public/img/togaPicCropped.jpg"
         alt=""
       />
       <div className=" text-4xl sm:text-7xl md:text-6xl flex flex-col items-center font-josefin font-black text-[#ececec] gap-2.5">

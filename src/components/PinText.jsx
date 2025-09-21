@@ -9,31 +9,31 @@ import {
 const cardData = [
   {
     title: "Minimal Designs",
-    imageSrc: "/img/web-design.png",
+    imageSrc: "img/web-design.png",
     description:
       "I create minimal and modern design to make the users more comfortable browsing the web",
   },
   {
     title: "One call away",
-    imageSrc: "/img/phone-call.png",
+    imageSrc: "img/phone-call.png",
     description:
       "Believe it or not just tell me what you need or might want to change I will be ONE CALL AWAY",
   },
   {
     title: "Dramatic Animations",
-    imageSrc: "/img/stars.png",
+    imageSrc: "img/stars.png",
     description:
       "There are no such thing as boring website when you razzle dazzle using animations",
   },
   {
     title: "Responsive designs",
-    imageSrc: "/img/phone.png",
+    imageSrc: "img/phone.png",
     description:
       "Making sure that the designs are suitable for mobiles, as hoomans can't live without their phones.",
   },
   {
     title: "Might blow your brains out",
-    imageSrc: "/img/surprised.png",
+    imageSrc: "img/surprised.png",
     description:
       "Yeah, that's right! designs and animation that will blow your heads out... figuratively of course.",
   },
@@ -52,7 +52,7 @@ const PinText = () => {
   return (
     <div
       ref={containerRef}
-      className="relative lg:h-[315vh] h-[230vh] flex flex-col items-center justify-start mt-50"
+      className="relative lg:h-[315vh] h-[300vh] md:h-[210vh] flex flex-col items-center justify-start mt-50"
     >
       <Motion.div
         style={{ opacity, scale }}
